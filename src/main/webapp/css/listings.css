@@ -1,0 +1,444 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff; /* White background */
+    color: #212121; /* Black text */
+    line-height: 1.6;
+}
+
+/* Container and Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Headings */
+h2.text-center {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d32f2f; /* Red heading */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+h2.text-center::after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+/* Car Card Styles */
+.car-card {
+    margin-bottom: 30px;
+}
+
+.car-card .card {
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff; /* White card background */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 500px; /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+}
+
+.car-card .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 32px rgba(211, 47, 47, 0.2); /* Red-tinted shadow */
+}
+
+.card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d32f2f; /* Red title */
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.card-title::before {
+    content: '\f1b9'; /* Car icon from Boxicons */
+    font-family: 'boxicons' !important;
+    font-size: 1.8rem;
+    color: #b71c1c; /* Darker red icon */
+    margin-right: 10px;
+}
+
+.card-details {
+    max-height: 200px; /* Fixed height for text content */
+    overflow-y: auto; /* Scroll for overflow */
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #212121; /* Black text */
+}
+
+.card-text strong {
+    color: #d32f2f; /* Red for strong text */
+    font-weight: 600;
+}
+
+/* Image Gallery */
+.car-images {
+    height: 100px; /* Fixed height for image gallery */
+    width: 384px; /* Fixed width for 3 images (120px * 3 + 12px * 2 gaps) */
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    gap: 12px;
+    margin-top: 15px;
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-wrapper {
+    width: 120px !important; /* Exact width */
+    height: 80px !important; /* Exact height */
+    min-width: 120px !important;
+    max-width: 120px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    overflow: hidden; /* Clip content */
+    border-radius: 8px;
+    flex-shrink: 0; /* Prevent shrinking */
+    box-sizing: content-box; /* Ensure borders/padding don't affect size */
+}
+
+.car-images img {
+    width: 120px !important; /* Exact width */
+    height: 80px !important; /* Exact height */
+    min-width: 120px !important;
+    max-width: 120px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures image fills the area without distortion */
+    border: 2px solid #e0e0e0; /* Light gray border */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f5f5f5; /* Light gray fallback */
+}
+
+.car-images img:hover {
+    transform: scale(1.1);
+    border-color: #d32f2f; /* Red border on hover */
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+/* Placeholder for missing images */
+.car-images .no-image {
+    width: 120px !important; /* Exact width */
+    height: 80px !important; /* Exact height */
+    min-width: 120px !important;
+    max-width: 120px !important;
+    min-height: 80px !important;
+    max-height: 80px !important;
+    border-radius: 8px;
+    background-color: #f5f5f5; /* Light gray background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    color: #212121; /* Black text */
+    border: 2px dashed #e0e0e0; /* Light gray dashed border */
+    text-align: center;
+}
+
+/* Buttons */
+.btn-primary, .btn-danger, .btn-secondary {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 100; /* Increased to avoid overlap */
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient */
+    border: none;
+    color: #ffffff; /* White text */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #b71c1c, #9a0007);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+.btn-danger {
+    background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient */
+    border: none;
+    color: #ffffff; /* White text */
+}
+
+.btn-danger:hover {
+    background: linear-gradient(45deg, #b71c1c, #9a0007);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+.btn-danger:active {
+    transform: scale(0.95); /* Clear feedback on click */
+    background: linear-gradient(45deg, #9a0007, #7f0000); /* Darker red */
+}
+
+.btn-danger:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    pointer-events: none; /* Prevent clicks */
+}
+
+.btn-secondary {
+    background-color: #e0e0e0; /* Light gray */
+    border-color: #e0e0e0;
+    color: #212121; /* Black text */
+}
+
+.btn-secondary:hover {
+    background-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+.beautiful-button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient */
+    border: none;
+    border-radius: 30px;
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.beautiful-button:hover {
+    background: linear-gradient(45deg, #b71c1c, #9a0007);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(211, 47, 47, 0.3);
+}
+
+/* Alerts */
+.alert {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    padding: 15px;
+    position: relative;
+    color: #212121; /* Black text */
+}
+
+.alert-success {
+    background-color: #f5f5f5; /* Light gray */
+    border: 1px solid #d32f2f; /* Red border */
+}
+
+.alert-danger {
+    background-color: #d32f2f; /* Red */
+    border: 1px solid #b71c1c;
+    color: #ffffff; /* White text */
+}
+
+.alert-info {
+    background-color: #f5f5f5; /* Light gray */
+    border: 1px solid #d32f2f; /* Red border */
+}
+
+.alert-link {
+    color: #d32f2f; /* Red link text */
+    text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+    transition: none !important; /* Disable all transitions */
+    z-index: 2000; /* Above all elements */
+}
+
+.modal-backdrop {
+    transition: none !important; /* Disable backdrop fade */
+    z-index: 1900; /* Below modal */
+    opacity: 0.5 !important; /* Consistent backdrop */
+}
+
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    animation: none !important; /* Disable animations */
+    z-index: 2100; /* Above backdrop */
+    background-color: #f5f5f5; /* Light gray modal background */
+}
+
+.modal-dialog {
+    animation: none !important; /* Disable animations */
+    transform-origin: center;
+    z-index: 2100;
+}
+
+.modal-header {
+    animation: none !important; /* Disable animations */
+    background: linear-gradient(45deg, #d32f2f, #b71c1c); /* Red gradient */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #ffffff; /* White text */
+}
+
+.modal-body {
+    animation: none !important; /* Disable animations */
+    font-size: 1rem;
+    color: #212121; /* Black text */
+}
+
+.modal-footer {
+    animation: none !important; /* Disable animations */
+    border-top: none;
+    padding: 15px 20px;
+    z-index: 2100;
+    background-color: #f5f5f5; /* Light gray */
+}
+
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #ffffff; /* White text */
+}
+
+.btn-close {
+    filter: invert(1);
+    z-index: 2200; /* Above modal content */
+}
+
+.modal-body img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0; /* Light gray border */
+}
+
+/* Ensure modal elements are clickable */
+.modal-content, .modal-footer, .modal-footer button {
+    position: relative;
+    z-index: 2200; /* Above backdrop and modal */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2.text-center {
+        font-size: 2rem;
+    }
+
+    .car-card .card {
+        margin: 0 10px;
+        height: 450px; /* Slightly smaller for mobile */
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .car-images {
+        height: 90px;
+        width: 324px; /* 3 images (100px * 3 + 12px * 2 gaps) */
+    }
+
+    .image-wrapper {
+        width: 100px !important;
+        height: 70px !important;
+        min-width: 100px !important;
+        max-width: 100px !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+    }
+
+    .car-images img,
+    .car-images .no-image {
+        width: 100px !important;
+        height: 70px !important;
+        min-width: 100px !important;
+        max-width: 100px !important;
+        min-height: 70px !important;
+        max-height: 70px !important;
+    }
+
+    .card-details {
+        max-height: 180px;
+    }
+
+    .btn-primary, .btn-danger, .btn-secondary {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+    }
+
+    .beautiful-button {
+        padding: 10px 25px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .car-card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .car-images {
+        height: 100px;
+        width: 264px; /* 3 images (80px * 3 + 12px * 2 gaps) */
+    }
+
+    .image-wrapper {
+        width: 100px !important;
+        height: 80px !important;
+        min-width: 80px !important;
+        max-width: 100px !important;
+        min-height: 60px !important;
+        max-height: 80px !important;
+    }
+
+    .car-images img,
+    .car-images .no-image {
+        width: 80px !important;
+        height: 60px !important;
+        min-width: 80px !important;
+        max-width: 80px !important;
+        min-height: 60px !important;
+        max-height: 60px !important;
+    }
+
+    .card-details {
+        max-height: 170px;
+    }
+}

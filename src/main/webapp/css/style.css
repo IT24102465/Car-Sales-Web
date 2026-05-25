@@ -1,0 +1,244 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    color: #111;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 0 0;
+}
+
+.nav-link {
+    color: #111;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 24px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-link.active, .nav-link:hover {
+    background: #e60000;
+    color: #fff;
+}
+
+.review-form {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px 24px 24px;
+    margin-bottom: 40px;
+}
+
+.review-form h2 {
+    color: #111;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
+}
+
+#reviewForm input, #reviewForm textarea, #reviewForm select {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafafa;
+    color: #111;
+}
+
+#reviewForm label {
+    font-weight: 600;
+    color: #111;
+}
+
+.btn {
+    background: #e60000;
+    color: #fff;
+    border: none;
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #b30000;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    color: #111;
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.underline {
+    width: 60px;
+    height: 4px;
+    background: #e60000;
+    margin: 0 auto 10px auto;
+    border-radius: 2px;
+}
+
+.review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px 18px;
+    text-align: center;
+    border-top: 4px solid #e60000;
+}
+
+.profile-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e60000;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #e60000;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.review-author {
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.review-position {
+    color: #e60000;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+#complaintContent, #reviewContent, textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-size: 1.1rem;
+}
+
+#complaintForm {
+    display: block;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#complaintForm .btn {
+    display: block;
+    margin: 16px auto 0 auto;
+}
+
+#complaintContent {
+    width: 100%;
+    box-sizing: border-box;
+    min-width: 100%;
+}
+/* FAQ Form Styling */
+#faqForm {
+    display: block;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#faqForm textarea {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 120px;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    padding: 12px;
+    background: #fafafa;
+    color: #111;
+    box-sizing: border-box;
+    resize: vertical;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#faqForm .btn {
+    display: block;
+    margin: 16px auto 0 auto;
+}
+
+/* FAQ List/Card Styling */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.faq-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    padding: 24px 18px;
+    margin-bottom: 10px;
+    border-left: 4px solid #e60000;
+}
+
+.faq-card p {
+    margin: 0 0 8px 0;
+    color: #111;
+}
+
+.faq-card form {
+    margin-top: 8px;
+}
+
+.faq-card .btn {
+    margin-top: 8px;
+}

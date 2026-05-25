@@ -1,0 +1,288 @@
+/* Updated Profile Form Styling */
+.container > .profile-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Stack form fields vertically */
+#profileForm .row {
+    display: block !important;
+    margin-bottom: 0 !important;
+}
+
+#profileForm .col-md-6 {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1.2rem;
+}
+
+/* Phone number field adjustments */
+#profileForm input[type="tel"] {
+    width: 60%; /* Reduced width */
+    min-width: 250px; /* Minimum width */
+    transform: translateX(-12px);
+    height: 45px;
+}
+
+/* Form controls styling */
+.form-control {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s;
+    height: 45px;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.form-control[readonly] {
+    background-color: #f8f9fa;
+    opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container > .profile-container {
+        padding: 20px;
+    }
+
+    #profileForm input[type="tel"] {
+        width: 100%; /* Full width on mobile */
+        min-width: auto;
+    }
+}
+
+/* Keep all other existing styles */
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.profile-avatar-container {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.profile-avatar:hover {
+    opacity: 0.8;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #495057;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #ffca2c;
+    border-color: #ffc720;
+}
+
+.mb-3 {
+    margin-bottom: 1.2rem !important;
+}
+/* Avatar Upload Styles */
+.profile-avatar-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+.avatar-upload {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar-upload .profile-avatar {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-upload .avatar-edit {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 1;
+}
+
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+
+.avatar-upload .avatar-edit label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    background: #3f51b5;
+    border: 2px solid #fff;
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.avatar-upload .avatar-edit label:hover {
+    background: #2c3e9b;
+    transform: scale(1.1);
+}
+
+.avatar-upload .avatar-edit label i {
+    font-size: 16px;
+}
+
+/* Add this style to ensure the remove button is properly styled */
+.btn-remove-avatar {
+    margin-top: 10px;
+    width: 100%;
+}
+.btn-remove-avatar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+/* Remove Photo Button Styles */
+.remove-photo-form {
+    display: inline-block;
+    width: auto;
+}
+
+.btn-remove-avatar {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    border-radius: 0.2rem;
+    margin-top: 8px;
+    width: auto;
+    display: inline-block;
+}
+
+.btn-remove-avatar:disabled {
+    opacity: 0.65;
+    pointer-events: none;
+}
+
+.btn-remove-avatar:hover {
+    background-color: #ff0000;
+    color: white;
+}
+/* Danger Zone Styling */
+.card-border-danger {
+    border: 1px solid #dc3545;
+}
+
+#deleteAccountModal .modal-footer form {
+    display: inline-block;
+    margin: 0;
+}
+
+/* styles.css */
+.user-type-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.user-type-badge {
+    background-color: #4CAF50; /* Green for buyers */
+    color: white;
+}
+
+.seller-section {
+    border-left: 4px solid #2196F3;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+.buyer-section {
+    border-left: 4px solid #4CAF50;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+.verified-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: greenyellow;
+    color: #0d6efd;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 10px;
+    font-weight: 900;
+    margin-right: 6px;
+    position: relative;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+

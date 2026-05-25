@@ -1,0 +1,744 @@
+02-May-2025 21:07:59.154 SEVERE [http-nio-8080-exec-5] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/OOP-projectnew] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Users\OSHADHA\IdeaProjects\OOP-projectnew\work\Catalina\localhost\OOP-projectnew\org\apache\jsp\profile_jsp.java]
+Syntax error on token "package", Identifier expected
+
+An error occurred at line: [24] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+21:     Object userListingsObj = request.getAttribute("userListings");
+22:     Object favoriteCarsObj = request.getAttribute("favoriteCars");
+23: 
+24:     List<Car> userListings = null;
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+
+
+An error occurred at line: [25] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+22:     Object favoriteCarsObj = request.getAttribute("favoriteCars");
+23: 
+24:     List<Car> userListings = null;
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+28:         userListings = (List<Car>) userListingsObj;
+
+
+An error occurred at line: [28] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+28:         userListings = (List<Car>) userListingsObj;
+29:     }
+30: 
+31:     if (favoriteCarsObj instanceof List) {
+
+
+An error occurred at line: [32] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+29:     }
+30: 
+31:     if (favoriteCarsObj instanceof List) {
+32:         favoriteCars = (List<Car>) favoriteCarsObj;
+33:     }
+34: %>
+35: <html lang="en">
+
+
+An error occurred at line: [126] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+123:                     </div>
+124: 
+125:                     <% if (userListings != null && !userListings.isEmpty()) { %>
+126:                     <% for (Car car : userListings) { %>
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+
+
+An error occurred at line: [160] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+157: 
+158:                     <% if (favoriteCars != null && !favoriteCars.isEmpty()) { %>
+159:                     <div class="row">
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [15] in the generated java file: [C:\Users\OSHADHA\IdeaProjects\OOP-projectnew\work\Catalina\localhost\OOP-projectnew\org\apache\jsp\profile_jsp.java]
+Syntax error on token "package", Identifier expected
+
+An error occurred at line: [24] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+21:     Object userListingsObj = request.getAttribute("userListings");
+22:     Object favoriteCarsObj = request.getAttribute("favoriteCars");
+23: 
+24:     List<Car> userListings = null;
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+
+
+An error occurred at line: [25] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+22:     Object favoriteCarsObj = request.getAttribute("favoriteCars");
+23: 
+24:     List<Car> userListings = null;
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+28:         userListings = (List<Car>) userListingsObj;
+
+
+An error occurred at line: [28] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+25:     List<Car> favoriteCars = null;
+26: 
+27:     if (userListingsObj instanceof List) {
+28:         userListings = (List<Car>) userListingsObj;
+29:     }
+30: 
+31:     if (favoriteCarsObj instanceof List) {
+
+
+An error occurred at line: [32] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+29:     }
+30: 
+31:     if (favoriteCarsObj instanceof List) {
+32:         favoriteCars = (List<Car>) favoriteCarsObj;
+33:     }
+34: %>
+35: <html lang="en">
+
+
+An error occurred at line: [126] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+123:                     </div>
+124: 
+125:                     <% if (userListings != null && !userListings.isEmpty()) { %>
+126:                     <% for (Car car : userListings) { %>
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+
+
+An error occurred at line: [160] in the jsp file: [/profile.jsp]
+Car cannot be resolved to a type
+157: 
+158:                     <% if (favoriteCars != null && !favoriteCars.isEmpty()) { %>
+159:                     <div class="row">
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:371)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:343)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:329)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:376)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:324)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)
+02-May-2025 21:10:03.452 SEVERE [http-nio-8080-exec-2] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() for servlet [jsp] in context with path [/OOP-projectnew] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getImageUrl() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getYear() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [134] in the jsp file: [/profile.jsp]
+The method getPrice() is undefined for the type Car
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+
+
+An error occurred at line: [134] in the jsp file: [/profile.jsp]
+The method getMileage() is undefined for the type Car
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+
+
+An error occurred at line: [135] in the jsp file: [/profile.jsp]
+The method getDescription() is undefined for the type Car
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+
+
+An error occurred at line: [135] in the jsp file: [/profile.jsp]
+The method getDescription() is undefined for the type Car
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+
+
+An error occurred at line: [138] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+
+
+An error occurred at line: [139] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+
+
+An error occurred at line: [141] in the jsp file: [/profile.jsp]
+The method getStatus() is undefined for the type Car
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+143:                             </div>
+144:                         </div>
+
+
+An error occurred at line: [141] in the jsp file: [/profile.jsp]
+The method getStatus() is undefined for the type Car
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+143:                             </div>
+144:                         </div>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getImageUrl() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getYear() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [166] in the jsp file: [/profile.jsp]
+The method getPrice() is undefined for the type Car
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+
+
+An error occurred at line: [166] in the jsp file: [/profile.jsp]
+The method getMileage() is undefined for the type Car
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+
+
+An error occurred at line: [168] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+170:                                             <i class='bx bx-heart'></i> Remove
+171:                                         </a>
+
+
+An error occurred at line: [169] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+170:                                             <i class='bx bx-heart'></i> Remove
+171:                                         </a>
+172:                                     </div>
+
+
+Stacktrace:] with root cause
+	org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getImageUrl() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [130] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+127:                     <div class="car-list-item">
+128:                         <div class="row">
+129:                             <div class="col-md-3">
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [133] in the jsp file: [/profile.jsp]
+The method getYear() is undefined for the type Car
+130:                                 <img src="<%= car.getImageUrl() %>" alt="<%= car.getMake() %> <%= car.getModel() %>" class="img-fluid rounded">
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+
+
+An error occurred at line: [134] in the jsp file: [/profile.jsp]
+The method getPrice() is undefined for the type Car
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+
+
+An error occurred at line: [134] in the jsp file: [/profile.jsp]
+The method getMileage() is undefined for the type Car
+131:                             </div>
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+
+
+An error occurred at line: [135] in the jsp file: [/profile.jsp]
+The method getDescription() is undefined for the type Car
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+
+
+An error occurred at line: [135] in the jsp file: [/profile.jsp]
+The method getDescription() is undefined for the type Car
+132:                             <div class="col-md-6">
+133:                                 <h5><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+134:                                 <p>$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+
+
+An error occurred at line: [138] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+135:                                 <p class="text-muted"><%= car.getDescription().substring(0, Math.min(100, car.getDescription().length())) %>...</p>
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+
+
+An error occurred at line: [139] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+136:                             </div>
+137:                             <div class="col-md-3 text-end">
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+
+
+An error occurred at line: [141] in the jsp file: [/profile.jsp]
+The method getStatus() is undefined for the type Car
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+143:                             </div>
+144:                         </div>
+
+
+An error occurred at line: [141] in the jsp file: [/profile.jsp]
+The method getStatus() is undefined for the type Car
+138:                                 <a href="edit-listing.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
+139:                                 <a href="DeleteListingServlet?id=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">Delete</a>
+140:                                 <div class="mt-2">
+141:                                     <span class="badge <%= "Active".equals(car.getStatus()) ? "bg-success" : "bg-warning" %>"><%= car.getStatus() %></span>
+142:                                 </div>
+143:                             </div>
+144:                         </div>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getImageUrl() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [163] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+160:                         <% for (Car car : favoriteCars) { %>
+161:                         <div class="col-md-6 mb-4">
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getMake() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getModel() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [165] in the jsp file: [/profile.jsp]
+The method getYear() is undefined for the type Car
+162:                             <div class="card h-100">
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+
+
+An error occurred at line: [166] in the jsp file: [/profile.jsp]
+The method getPrice() is undefined for the type Car
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+
+
+An error occurred at line: [166] in the jsp file: [/profile.jsp]
+The method getMileage() is undefined for the type Car
+163:                                 <img src="<%= car.getImageUrl() %>" class="card-img-top" alt="<%= car.getMake() %> <%= car.getModel() %>">
+164:                                 <div class="card-body">
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+
+
+An error occurred at line: [168] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+165:                                     <h5 class="card-title"><%= car.getMake() %> <%= car.getModel() %> <%= car.getYear() %></h5>
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+170:                                             <i class='bx bx-heart'></i> Remove
+171:                                         </a>
+
+
+An error occurred at line: [169] in the jsp file: [/profile.jsp]
+The method getId() is undefined for the type Car
+166:                                     <p class="card-text">$<%= car.getPrice() %> | <%= car.getMileage() %> miles</p>
+167:                                     <div class="d-flex justify-content-between">
+168:                                         <a href="car-details.jsp?id=<%= car.getId() %>" class="btn btn-sm btn-primary">View Details</a>
+169:                                         <a href="RemoveFavoriteServlet?carId=<%= car.getId() %>" class="btn btn-sm btn-outline-danger">
+170:                                             <i class='bx bx-heart'></i> Remove
+171:                                         </a>
+172:                                     </div>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:72)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:192)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:542)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:371)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:343)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:329)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:603)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:399)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:376)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:324)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:623)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:199)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:168)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:144)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:168)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:130)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:660)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:346)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:396)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:937)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1793)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1570)

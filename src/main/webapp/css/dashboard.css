@@ -1,0 +1,204 @@
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* User Profile Dropdown Styles */
+.user-profile {
+    margin-left: 20px;
+}
+
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.profile-button img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #fff;
+    transition: all 0.3s ease;
+}
+
+.profile-button:hover img {
+    border-color: #4CAF50;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.user-info {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-info span {
+    display: block;
+    margin: 5px 0;
+}
+
+#userName {
+    font-weight: bold;
+}
+
+#userEmail {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #ed0202;
+}
+
+.logout-button svg {
+    color: #666;
+}
+.dropdown-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-option:hover {
+    background-color: #0d6efd;
+}
+
+.dropdown-option svg {
+    color: #666;
+}
+
+.user-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+.seller-badge {
+    background: linear-gradient(to bottom, #e3f2fd 0%, #bbdefb 100%);
+    color: #1565c0;
+    border: 1px solid #90caf9;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 4px rgba(21, 101, 192, 0.1);
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.buyer-badge {
+    background: linear-gradient(to bottom, #e8f5e9 0%, #d0ebd2 100%);
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+    padding: 6px 12px 6px 32px; /* Ample left space */
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+/* Add these styles to your existing dashboard.css */
+
+/* Welcome message styles */
+.welcome-message {
+    margin-right: -950px; /* Space between welcome and profile */
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.welcome-message div:first-child {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.welcome-message div:last-child {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Modify the navbar to properly align items */
+.site-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* Create a container for the right-aligned items */
+.site-navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* This pushes it to the right */
+}
+
+/* Adjust the user profile margin */
+.user-profile {
+    margin-left: 15px; /* Reduced from 20px for better spacing */
+}
+
+/* Ensure nav-links stay centered */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

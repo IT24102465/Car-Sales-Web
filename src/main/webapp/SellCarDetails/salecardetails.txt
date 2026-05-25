@@ -1,0 +1,22 @@
+2025-05-17 10:10:49 | Toyota | Highlander | 2017 | 23000 | Like New | Automatic | A/C,Bluetooth | better | Vishadi | ramodyavishadi@gmail.com | 0770457072 | Negombo | leaf - Copy.jpg
+2025-05-17 10:16:35 | Toyota | Highlander | 2014 | 23000 | New | Automatic | None | better | Vishadi | ramodyavishadi@gmail.com | 0770457072 | Negombo | img1.jpg
+2025-05-17 10:19:45 | Toyota | Highlander | 2019 | 23000 | Like New | Automatic | None |  | Vishadi | ramodyavishadi@gmail.com | 0770457072 | Negombo | img2.jpg
+2025-05-17 10:22:31 | Toyota | Highlander | 2015 | 23000 | Like New | Automatic | None | better | Vishadi | ramodyavishadi@gmail.com | 0770457072 | Negombo | img3.jpg
+2025-05-18 15:38:35 | BMW | Camry | 2012 | 34000 | Fair | Automatic | A/C,Airbags | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BMW.X5(1) - Copy.jpg
+2025-05-18 15:39:33 | BMW | Camry | 2017 | 34000 | Excellent | Manual | A/C,Alloy Wheels | better | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BMW X5 - Copy.jpg
+2025-05-18 15:53:37 | Honda | Camry | 2014 | 34000 | Good | Manual | A/C,Power Steering,Navigation | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | corolla 2018 - Copy.jpg
+2025-05-18 19:45:03 | Honda | H200 | 2020 | 34000 | Excellent | Manual | A/C,ABS,Bluetooth | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BN-CIVIC.jpg
+2025-05-18 20:11:15 | Ford | Camry | 2015 | 34000 | Good | Automatic | Power Windows,Navigation | condition is good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | car.jpg
+2025-05-18 20:20:42 | Hyundai | H300 | 2018 | 45000 | Good | Manual | Power Windows,Alloy Wheels | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | Allion - Copy.jpg
+2025-05-18 20:21:15 | Audi | Highlander | 2013 | 34000 | Fair | Automatic | Power Windows,Airbags | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | audi(2) - Copy.jpg
+2025-05-18 20:35:31 | Mercedes | Camry | 2015 | 56000 | Excellent | Manual | Power Steering,Alloy Wheels | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | car1.jpg
+2025-05-18 20:52:23 | Audi | Highlander | 2016 | 34000 | Good | Automatic | A/C,Alloy Wheels,Navigation | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | audi(1) - Copy.jpeg
+2025-05-18 20:58:34 | BMW | Highlander | 2015 | 34000 | Good | Automatic | A/C,Power Steering | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BMW X5 - Copy.jpg
+2025-05-18 21:30:55 | BMW | Highlander | 2015a | 34000 | Fair | Automatic | Airbags,Alloy Wheels | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BMW.X5(1) - Copy.jpg
+2025-05-18 23:52:10 | Mercedes | Highlander | 2018 | 34000 | Fair | Automatic | Power Steering,ABS | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | Luxury Car Deals - Made with PosterMyWall.jpg
+2025-05-19 08:49:56 | BMW | Highlander | 2016 | 34000 | Good | Automatic | A/C,Airbags | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | BMW X5 - Copy.jpg
+2025-05-19 09:59:59 | Toyota | Highlander | 2021 | 34000 | Excellent | Automatic | A/C,Airbags | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | corolla2021 - Copy.jpg
+2025-05-19 10:18:08 | Toyota | Highlander | 2022 | 34000 | Excellent | Manual | A/C,Airbags | good | Vishadi | ramodyavishadi@gmail.com | 0770532876 | Gampaha | leaf(1) - Copy.jpg
+2025-05-21 11:47:02 | BMW | X5 | 2023 | 34534534 | Good | Automatic | A/C | Premium SUV | oshada jayawrdhana | jayawaoshada@gmail.com | 0123456789 | 50000 | colombo | oshada jayawrdhana | BMW X5 - Copy.jpg
+2025-05-23 08:58:58 | Honda | Grace | 2016 | 45600 | Excellent | Automatic | A/C,ABS,Airbags,Alloy Wheels | High performance | oshada jayawrdhana | jayawaoshada@gmail.com | 0775500133 | 120000 | Negombo | oshada jayawrdhana | grace - Copy.jpg
+2025-05-25 10:00:00 | BMW | M3 | 1997 | 25000 | Good | Manual | A/C,Airbags,Alloy Wheels | Rare sporty coupe with classic BMW handling | Vishadi | ramodyavishadi@gmail.com | 0770457072 | Colombo | BMW_E36_M3_1997.jpg

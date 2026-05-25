@@ -1,0 +1,327 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
+/* Review Section */
+.reviews {
+    padding: 60px 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 2.2rem;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+.section-title .underline {
+    width: 80px;
+    height: 4px;
+    background: #FF0000;
+    margin: 0 auto;
+}
+
+/* Review Slider Container */
+.review-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Review Track */
+.review-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+/* Review Card */
+.review-card {
+    flex: 0 0 calc(25% - 20px);
+    margin: 0 10px;
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border: 1px solid #eee;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+    border: 3px solid #FF0000;
+}
+
+.stars {
+    color: #FFD700;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review-author {
+    font-weight: 700;
+    color: #222;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.review-position {
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Navigation Arrows */
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(100% - 80px);
+    left: 40px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.slider-nav button {
+    background: #FF0000;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+.slider-nav button:hover {
+    background: #cc0000;
+    transform: scale(1.1);
+}
+
+.slider-nav button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+}
+.slider-nav button:hover:not(:disabled) {
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* Dots Indicators */
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.slider-dots .dot {
+    width: 12px;
+    height: 12px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.slider-dots .dot.active {
+    background: #FF0000;
+    transform: scale(1.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .review-card {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 992px) {
+    .review-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .review-slider {
+        padding: 0 ;
+    }
+
+    .slider-nav {
+        padding: 0 5px;
+    }
+
+    .review-card {
+        flex: 0 0 calc(100% - 20px);
+        pointer-events: none;
+    }
+
+    .slider-nav button {
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+    }
+    .review-track {
+        touch-action: pan-y;
+        user-select: none;
+        -webkit-user-drag: none;
+    }
+}
+/* COMPLETE STANDALONE STYLES FOR ADD REVIEW CARD */
+.add-review-card {
+    /* Card structure */
+    box-sizing: border-box;
+    width: calc(25% - 20px); /* Default 4 cards per row */
+    min-width: 250px;
+    margin: 0 10px;
+    padding: 30px 25px;
+
+    /* Visual styling */
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+
+    /* Content layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Interactions */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border-color: #ff0000;
+}
+
+.add-review-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Plus icon */
+.add-review-card .bx-plus-circle {
+    display: block;
+    font-size: 48px;
+    color: #ff0000;
+    margin: 0 0 20px 0;
+    line-height: 1;
+}
+
+/* Text elements */
+.add-review-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    margin: 0 0 12px 0;
+    padding: 0;
+    line-height: 1.3;
+}
+
+.add-review-card p {
+    font-size: 15px;
+    color: #666666;
+    margin: 0 0 25px 0;
+    padding: 0;
+    line-height: 1.5;
+    max-width: 90%;
+}
+
+/* Button styles */
+.add-review-btn {
+    /* Structure */
+    display: inline-block;
+    padding: 12px 28px;
+    margin: 10px 0 0 0;
+
+    /* Text */
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    line-height: 1;
+
+    /* Visual */
+    background: #ff0000;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgba(255, 0, 0, 0.2);
+
+    /* Interactions */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-review-btn:hover {
+    background: #cc0000;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .add-review-card {
+        width: calc(33.333% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 992px) {
+    .add-review-card {
+        width: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .add-review-card {
+        width: calc(100% - 20px); /* 1 card per row */
+        min-width: auto;
+    }
+}

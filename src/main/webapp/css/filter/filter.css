@@ -1,0 +1,56 @@
+#car-filters {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#search-results .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#search-results .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+#saved-vehicles {
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#saved-vehicles .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#saved-vehicles .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+#saved-vehicles .favorite-btn {
+    background: none;
+    border: none;
+    color: #dc3545;
+    font-size: 24px;
+}
+
+#saved-vehicles .favorite-btn.filled i {
+    color: #dc3545;
+}
+
+.buy-now-page-arrow {
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.buy-now-page-arrow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.buy-now-page-arrow:focus-visible {
+    outline: 3px solid rgba(220, 53, 69, 0.25);
+    outline-offset: 2px;
+}

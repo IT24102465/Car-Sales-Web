@@ -1,0 +1,44 @@
+Brand: Toyota
+Model: Axio G Grade
+Year: 2016
+Mileage: 89,000
+Price: Rs. 8,750,000.00
+Location: Colombo 07
+Owner Contact: 077-1234567
+Damages: Small scratch on front bumper
+Status: Pending Approval
+Submission Date: 2025-05-21 13:22:10
+---
+Brand: Suzuki
+Model: Wagon R Premium
+Year: 2018
+Mileage: 64,300
+Price: Rs. 4,950,000.00
+Location: Kandy
+Owner Contact: 071-9876543
+Damages: Rear door repainted due to minor dent
+Status: Pending Approval
+Submission Date: 2025-05-21 13:55:48
+---
+Brand: Nissan
+Model: Leaf X
+Year: 2015
+Mileage: 112,000
+Price: Rs. 3,900,000.00
+Location: Galle
+Owner Contact: 075-2345678
+Damages: Battery replaced in 2023
+Status: Rejected
+Submission Date: 2025-05-21 14:11:22
+---
+Brand: Honda
+Model: Vezel RS
+Year: 2020
+Mileage: 41,800
+Price: Rs. 11,200,000.00
+Location: Negombo
+Owner Contact: 076-8765432
+Damages: None
+Status: Approved
+Submission Date: 2025-05-21 14:45:36
+---

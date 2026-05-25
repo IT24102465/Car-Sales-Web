@@ -1,0 +1,176 @@
+/* Car certification wizard — scoped to avoid conflicting with site navbar/footer */
+.certification-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+.certification-page .certification-hero-banner {
+    display: block;
+    background-color: #FF0000;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.certification-page .certification-hero-banner::before {
+    display: none;
+}
+
+.certification-page .certification-hero-banner h1,
+.certification-page .certification-hero-banner .hero-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.certification-page .certification-hero-banner .lead {
+    color: #fff;
+}
+
+.certification-page .certification-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.certification-page .certification-content h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.certification-page .btn-primary {
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.certification-page .btn-primary:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.certification-page .btn-danger {
+    background-color: #FF0000;
+    border-color: #FF0000;
+}
+
+.certification-page .btn-danger:hover {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.certification-page .card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.certification-page .card-header {
+    background-color: #FF0000;
+    color: #fff;
+    font-weight: 600;
+    padding: 14px 20px;
+    border: none;
+}
+
+.certification-page .form-control:focus {
+    border-color: #FF0000;
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.15);
+}
+
+.certification-page .form-group label i,
+.certification-page label i {
+    color: #FF0000;
+    margin-right: 6px;
+}
+
+/* Step indicator */
+.certification-page .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.certification-page .step-indicator::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: #ddd;
+    z-index: 1;
+}
+
+.certification-page .step {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 33.333%;
+    font-size: 0.9rem;
+}
+
+.certification-page .step.active {
+    font-weight: bold;
+    color: #FF0000;
+}
+
+.certification-page .step-number {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 36px;
+    margin: 0 auto 8px;
+    font-weight: bold;
+}
+
+.certification-page .step.active .step-number {
+    border-color: #FF0000;
+    background-color: #FF0000;
+    color: #fff;
+}
+
+.certification-page .step.completed .step-number {
+    border-color: #28a745;
+    background-color: #28a745;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .certification-page .certification-hero-banner {
+        padding: 40px 15px;
+    }
+
+    .certification-page .step {
+        font-size: 0.75rem;
+    }
+}
+
+/* Legacy admin views (admin_login, admin_dashboard) — not site navbar */
+body:not(.certification-page) .navbar.navbar-dark {
+    background-color: #FF0000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+}
+
+body:not(.certification-page) .navbar-brand {
+    font-weight: 700;
+    color: #fff !important;
+}
+
+body:not(.certification-page) .footer {
+    background-color: #FF0000;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
